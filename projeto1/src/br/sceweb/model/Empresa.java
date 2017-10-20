@@ -15,11 +15,20 @@ public class Empresa {
 	String endereco;
 	String telefone;
 
+
+	/**
+	 * Retorna o valor do CNPJ
+	 * @return String
+	 */
 	public String getCnpj() {
 		return cnpj;
 	}
 	
-	
+	/**
+	 * Configura o valor do CNPJ
+	 * @param cnpj
+	 * @return String
+	 */
 	public String setCnpj(String cnpj) {
 		String msg="";
 		if(isValido(cnpj)){
@@ -29,41 +38,75 @@ public class Empresa {
 		}
 		return msg;
 	}
-
+	
+	/**
+	 * Retorna o nome da empresa
+	 * @return String
+	 */
 	public String getNomeDaEmpresa() {
 		return nomeDaEmpresa;
 	}
 
+	/**
+	 * Configura o nome da empresa
+	 * @return void
+	 * @param nomeDaEmpresa
+	 */
 	public void setNomeDaEmpresa(String nomeDaEmpresa) {
 		this.nomeDaEmpresa = nomeDaEmpresa;
 	}
 
+	/**
+	 * Retorna o nome fantasia da empresa
+	 * @return String
+	 */
 	public String getNomeFantasia() {
 		return nomeFantasia;
 	}
-
+	
+	/**
+	 * Configura o nome fantasia da empresa
+	 * @return void
+	 * @param nomeFantasia
+	 */
 	public void setNomeFantasia(String nomeFantasia) {
 		this.nomeFantasia = nomeFantasia;
 	}
 
+	/**
+	 * Retorna o endereço
+	 * @return String
+	 */
 	public String getEndereco() {
 		return endereco;
 	}
 
+	/**
+	 * Configura o endereço
+	 * @return void
+	 * @param endereco
+	 */
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
 
+	/**
+	 * Retorna o número de telefone
+	 * @return String
+	 */
 	public String getTelefone() {
 		return telefone;
 	}
 
+	/**
+	 * Configura o número de telefone
+	 * @return void
+	 * @param telefone
+	 */
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
-	/*
-	 * valida o cnpj
-	 */
+	
 	public boolean isValido(String cnpj) {
 		char dig13, dig14; 
 		int sm, i, r, num, peso;

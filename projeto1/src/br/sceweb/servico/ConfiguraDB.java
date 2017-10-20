@@ -1,5 +1,9 @@
 package br.sceweb.servico;
-
+/**
+ * Classe responsável por configurar os parâmetros de conexão do Banco de Dados
+ * @author Lab103
+ * @version 1
+ */
 public class ConfiguraDB {
 	String url = "";
 	String driver = "";

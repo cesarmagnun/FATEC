@@ -5,13 +5,17 @@ import java.sql.SQLException;
 
 import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.exceptions.jdbc4.CommunicationsException;
-
+/**
+ * Essa classe é responsável por criar conexões com o Banco de Dados
+ * @author Lab103
+ * @version 1
+ */
 public class FabricaDeConexoes {
 
 	String url = "jdbc:mysql://localhost/sceweb";
 	String driver = "com.mysql.jdbc.Driver";
 	String usuario = "root";
-	String senha = "";
+	String senha = "alunofatec";
 
 	public FabricaDeConexoes(ConfiguraDB configura) {
 		this.url = configura.getUrl();
